@@ -14,6 +14,7 @@ int main() {
             break;
 
         default:
+        
             cout << "Your character is a consonant";
             break;
     }
