@@ -16,7 +16,12 @@ int mul(int x, int y){
     return mul;
 }
 
-int div(int x, int y){
+int divya(int x, int y){
+    if(y==0)
+    {
+        cout<<" Sorry!, divide by zero";
+        exit(1);
+    }
         int div = x / y;
         return div;
    
@@ -28,7 +33,7 @@ int main (){
     cout << "Add two numbers: " << sum(a, b) << endl;
     cout << "Subtract two numbers: " << sub(a, b) << endl;
     cout << "Multiply two numbers: " << mul(a, b) << endl;
-    cout << "Divide two numbers: " << div(a, b) << endl;
+    cout << "Divide two numbers: " << divya(a, b) << endl;
     
 
     return 0;
