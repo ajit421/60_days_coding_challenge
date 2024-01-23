@@ -1,9 +1,18 @@
 #include<iostream>
 using namespace std;
 
-bool isprime(int num){
+/* bool isprime(int num){
     for(int i=2;i<=(num-1);i++){
         if(num%i==0){
+            return false;
+        }
+    }
+    return true;
+} */
+
+bool isprime(int num){
+    for(int i=2;i*i<=num;i++){
+        if(num%2==0){
             return false;
         }
     }
