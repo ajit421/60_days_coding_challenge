@@ -2,7 +2,7 @@ class Solution{
     static int minValue(String s, int k){
         
         PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
-        int arr[] = new int[26];
+        int arr[] = new int[];
         
         for(char c : s.toCharArray()){
             arr[c - 'a']++;
